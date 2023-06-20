@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+header{
+    background-color: rgba(134, 91, 50, 0.64);
+}
+
+h1{
+    background-color: white;
+    text-align: center;
+}
+
+nav{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ul-index li{
+    border: black solid 3px;
+}
+p{
+    font-size: 25px;
+    padding: 20px;
+}
+h2{
+    font-size: 30px;
+    padding: 5px;
+    
+}
+/* aca empieza todo lo que es para grid, del index*/
+.ul-li{
+    list-style-type:decimal;
+    margin-left: 30px;
+    
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+div ul{
+    list-style-type: disc;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.ul1-grid{
+    background-color: lightblue;
+    grid-area: lista1;
+}
+.ul2-grid{
+    background-color: lightsalmon;
+    grid-area: lista2;
+}
+.ul3-grid{
+    background-color: lightgreen;
+    grid-area: lista3;
+}
+.ul4-grid{
+    background-color: lightgrey;
+    grid-area: lista4;
+}
+.img1-grid{
+    background-color: lightcoral;
+    grid-area: imagen;
+    display: flex;
+    align-items: center;
+
+}
+.li-grid1{
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "lista1 imagen"
+    "lista2 imagen"
+    "lista3 imagen"
+    "lista4 imagen";
+    justify-content: space-between;
+}
+.li1{
+    background-color: lightblue;
+    grid-area: cafe1;
+}
+.li2{
+    background-color: lightcoral;
+    grid-area: cafe2;
+}
+.li3{
+    background-color: lightgray;
+    grid-area: cafe3;
+}
+.li4{
+    background-color: lightsalmon;
+    grid-area: cafe4;
+}
+.li5{
+    background-color: lightgoldenrodyellow;
+    grid-area: cafe5;
+}
+.img2-grid{
+    background-color: lightcyan;
+    grid-area: imagen2;
+}
+.li-grid2{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "imagen2 cafe1"
+    "imagen2 cafe2"
+    "imagen2 cafe3"
+    "imagen2 cafe4"
+    "imagen2 cafe5";
+}
+.l1{
+    background-color: lightsalmon;
+    grid-area: caf1;
+}
+.l2{
+    background-color: lightgray;
+    grid-area: caf2;
+}
+.l3{
+    background-color: lightslategray;
+    grid-area: caf3;
+}
+.l4{
+    background-color: lightgoldenrodyellow;
+    grid-area: caf4;
+}
+.l5{
+    background-color: lightcoral;
+    grid-area: caf5;
+}
+.l6{
+    background-color: rgb(148, 53, 53);
+    grid-area: caf6;
+}
+.img-filtracion{
+    background-color: aquamarine;
+    grid-area: filtracion;
+
+}
+.li-grid3{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "caf1 filtracion"
+    "caf2 filtracion"
+    "caf3 filtracion"
+    "caf4 filtracion"
+    "caf5 filtracion"
+    "caf6 filtracion";
+}
+.cafe-hirviendo1{
+    background-color: antiquewhite;
+    grid-area: ch1;
+}
+.cafe-hirviendo2{
+    background-color: azure;
+    grid-area: ch1;
+}
+.img-hirviendo{
+    background-color: azure;
+    grid-area: cafehir;
+    align-self: center;
+    justify-self: center;
+}
+.li-grid4{
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "ch1 cafehir"
+    "ch1 cafehir";
+}
+/*cafe americano*/
+.header-div{
+    display: flex;
+}
+.j-self{
+    justify-self: center;
+}
+.ul-americano{
+    list-style-type:decimal;
+    padding: 50px;
+    font-size: 20px;
+}
