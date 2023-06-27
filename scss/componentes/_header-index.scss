@@ -1,0 +1,23 @@
+header{
+    background-color:nth($colors , 6 );
+    margin: nth($size, 1);
+    div{ 
+        padding: nth($size, 2);     
+        h1{
+            text-align: nth($align, 3);
+            text-decoration:nth($decoration , 7);
+        }
+      }  
+    nav{ 
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        justify-content: space-between;
+        a{
+            text-decoration: dotted;    
+            font-weight: bold;       
+            margin: $size-m;
+            padding: 3px;
+            border: 2px solid $color-principal;
+        }                   
+    }          
+}    

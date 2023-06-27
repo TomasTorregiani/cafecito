@@ -1,0 +1,32 @@
+main{
+    h2{font-size: 25px;
+        font-weight: bolder;
+        text-decoration: wavy;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+   }
+    p{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   ul{list-style-type: circle;
+      li{font-size: 40px;
+         color: red;
+        div{ display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            ul{list-style-type: decimal;
+                
+                li{font-size: 20px;
+                   color: black; 
+                }                                       
+            }
+            img{
+                align-self: center;
+            }
+        }
+      }
+   }
+}
+img{
+    border-radius: 20px;
+}
+

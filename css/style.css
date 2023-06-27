@@ -1,189 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+header {
+  background-color: rgba(165, 70, 70, 0.53);
+  margin: 2px;
 }
-header{
-    background-color: rgba(134, 91, 50, 0.64);
+header div {
+  padding: 4px;
+}
+header div h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+header nav {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: dotted;
+  font-weight: bold;
+  margin: 10px;
+  padding: 3px;
+  border: 2px solid rgb(178, 26, 26);
 }
 
-h1{
-    background-color: white;
-    text-align: center;
+main h2 {
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: wavy;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+main p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main ul {
+  list-style-type: circle;
+}
+main ul li {
+  font-size: 40px;
+  color: red;
+}
+main ul li div {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+main ul li div ul {
+  list-style-type: decimal;
+}
+main ul li div ul li {
+  font-size: 20px;
+  color: black;
+}
+main ul li div img {
+  align-self: center;
 }
 
-nav{
-    padding: 50px;
-    display: flex;
-    justify-content: space-evenly;
+img {
+  border-radius: 20px;
 }
-.ul-index li{
-    border: black solid 3px;
-}
-p{
-    font-size: 25px;
-    padding: 20px;
-}
-h2{
-    font-size: 30px;
-    padding: 5px;
-    
-}
-/* aca empieza todo lo que es para grid, del index*/
-.ul-li{
-    list-style-type:decimal;
-    margin-left: 30px;
-    
-    padding: 20px;
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-div ul{
-    list-style-type: disc;
-    margin-left: 20px;
-    text-decoration: none;
-}
-.ul1-grid{
-    background-color: lightblue;
-    grid-area: lista1;
-}
-.ul2-grid{
-    background-color: lightsalmon;
-    grid-area: lista2;
-}
-.ul3-grid{
-    background-color: lightgreen;
-    grid-area: lista3;
-}
-.ul4-grid{
-    background-color: lightgrey;
-    grid-area: lista4;
-}
-.img1-grid{
-    background-color: lightcoral;
-    grid-area: imagen;
-    display: flex;
-    align-items: center;
 
+.nav-moka {
+  grid-area: nav-moka;
 }
-.li-grid1{
-    display: grid;
-    grid-template-columns: 70% auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "lista1 imagen"
-    "lista2 imagen"
-    "lista3 imagen"
-    "lista4 imagen";
-    justify-content: space-between;
-}
-.li1{
-    background-color: lightblue;
-    grid-area: cafe1;
-}
-.li2{
-    background-color: lightcoral;
-    grid-area: cafe2;
-}
-.li3{
-    background-color: lightgray;
-    grid-area: cafe3;
-}
-.li4{
-    background-color: lightsalmon;
-    grid-area: cafe4;
-}
-.li5{
-    background-color: lightgoldenrodyellow;
-    grid-area: cafe5;
-}
-.img2-grid{
-    background-color: lightcyan;
-    grid-area: imagen2;
-}
-.li-grid2{
-    display: grid;
-    grid-template-columns: 30% auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "imagen2 cafe1"
-    "imagen2 cafe2"
-    "imagen2 cafe3"
-    "imagen2 cafe4"
-    "imagen2 cafe5";
-}
-.l1{
-    background-color: lightsalmon;
-    grid-area: caf1;
-}
-.l2{
-    background-color: lightgray;
-    grid-area: caf2;
-}
-.l3{
-    background-color: lightslategray;
-    grid-area: caf3;
-}
-.l4{
-    background-color: lightgoldenrodyellow;
-    grid-area: caf4;
-}
-.l5{
-    background-color: lightcoral;
-    grid-area: caf5;
-}
-.l6{
-    background-color: rgb(148, 53, 53);
-    grid-area: caf6;
-}
-.img-filtracion{
-    background-color: aquamarine;
-    grid-area: filtracion;
 
+.h1-moka {
+  grid-area: h1-moka;
 }
-.li-grid3{
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "caf1 filtracion"
-    "caf2 filtracion"
-    "caf3 filtracion"
-    "caf4 filtracion"
-    "caf5 filtracion"
-    "caf6 filtracion";
+
+.img-moka1 {
+  grid-area: img-moka1;
 }
-.cafe-hirviendo1{
-    background-color: antiquewhite;
-    grid-area: ch1;
+
+.img-moka2 {
+  grid-area: img-moka2;
 }
-.cafe-hirviendo2{
-    background-color: azure;
-    grid-area: ch1;
+
+#div-moka {
+  display: grid;
+  grid-template-columns: 20% 10% 10% 10% 10% 10% 20%;
+  grid-template-rows: 50px 50px;
+  grid-template-areas: "img-moka-1 h1-moka h1-moka h1-moka h1-moka h1-moka img-moka2" "img-moka-1 nav-moka nav-moka nav-moka nav-moka nav-moka img-moka2";
 }
-.img-hirviendo{
-    background-color: azure;
-    grid-area: cafehir;
-    align-self: center;
-    justify-self: center;
-}
-.li-grid4{
-    display: grid;
-    grid-template-columns: 60% auto;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "ch1 cafehir"
-    "ch1 cafehir";
-}
-/*cafe americano*/
-.header-div{
-    display: flex;
-}
-.j-self{
-    justify-self: center;
-}
-.ul-americano{
-    list-style-type:decimal;
-    padding: 50px;
-    font-size: 20px;
-}
+
+/*# sourceMappingURL=style.css.map */
