@@ -59,6 +59,13 @@ img {
   border-radius: 20px;
 }
 
+#div-moka {
+  display: grid;
+  grid-template-columns: 20% 10% 10% 10% 10% 10% 20%;
+  grid-template-rows: 50px 50px;
+  grid-template-areas: "img-moka1 h1-moka h1-moka h1-moka h1-moka h1-moka img-moka2" "img-moka1 nav-moka nav-moka nav-moka nav-moka nav-moka img-moka2";
+}
+
 .nav-moka {
   grid-area: nav-moka;
 }
@@ -73,13 +80,6 @@ img {
 
 .img-moka2 {
   grid-area: img-moka2;
-}
-
-#div-moka {
-  display: grid;
-  grid-template-columns: 20% 10% 10% 10% 10% 10% 20%;
-  grid-template-rows: 50px 50px;
-  grid-template-areas: "img-moka-1 h1-moka h1-moka h1-moka h1-moka h1-moka img-moka2" "img-moka-1 nav-moka nav-moka nav-moka nav-moka nav-moka img-moka2";
 }
 
 /*# sourceMappingURL=style.css.map */
