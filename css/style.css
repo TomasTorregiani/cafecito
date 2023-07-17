@@ -1,36 +1,99 @@
-header {
-  background-color: rgba(165, 70, 70, 0.53);
-  margin: 2px;
+body {
+  margin: 0 0;
+  padding: 10px;
+  border: 50px brown solid;
 }
+@media (max-width: 575px) {
+  body {
+    border: 20px brown solid;
+  }
+}
+
 header div {
+  width: 100%;
+  height: 200px;
   padding: 4px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 10px 10px 12px rgb(87, 55, 55);
+}
+@media (max-width: 575px) {
+  header div {
+    height: 100px;
+  }
+}
+header div img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
 }
 header div h1 {
+  font-size: 50px;
+  color: rgb(28, 12, 12);
   text-align: center;
   text-decoration: underline;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  position: absolute;
+  top: 20%;
+  left: 48%;
+}
+@media (max-width: 575px) {
+  header div h1 {
+    font-size: 30px;
+  }
 }
 header nav {
+  margin: 10px;
+  border-bottom: 1px grey dashed;
   font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 575px) {
+  header nav {
+    margin: 5px;
+    font-size: 20px;
+  }
 }
 header nav a {
-  text-decoration: dotted;
+  font-size: 25px;
+  color: rgb(133, 69, 69);
   font-weight: bold;
   margin: 10px;
   padding: 3px;
-  border: 2px solid rgb(178, 26, 26);
+}
+header nav a:hover {
+  background-color: rgb(184, 99, 99);
+  transform: scale(1.2);
+  border: 1px black solid;
+  color: white;
+}
+@media (max-width: 575px) {
+  header nav a {
+    font-size: 18px;
+    padding: 2px;
+  }
 }
 
 main h2 {
   font-size: 25px;
   font-weight: bolder;
-  text-decoration: wavy;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
 }
+@media (max-width: 575px) {
+  main h2 {
+    font-size: 18px;
+  }
+}
 main p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+@media (max-width: 575px) {
+  main p {
+    font-size: 15px;
+  }
 }
 main ul {
   list-style-type: circle;
@@ -39,10 +102,21 @@ main ul li {
   font-size: 40px;
   color: red;
 }
+@media (max-width: 575px) {
+  main ul li {
+    font-size: 20px;
+  }
+}
 main ul li div {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+@media (max-width: 575px) {
+  main ul li div {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 main ul li div ul {
   list-style-type: decimal;
@@ -51,12 +125,20 @@ main ul li div ul li {
   font-size: 20px;
   color: black;
 }
+@media (max-width: 575px) {
+  main ul li div ul li {
+    font-size: 15px;
+  }
+}
 main ul li div img {
   align-self: center;
-}
-
-img {
   border-radius: 20px;
+  box-shadow: 5px 5px 10px black;
+}
+@media (max-width: 575px) {
+  main ul li div img {
+    display: none;
+  }
 }
 
 #div-moka {
