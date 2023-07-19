@@ -1,7 +1,6 @@
 body {
   margin: 0 0;
-  padding: 10px;
-  border: 50px brown solid;
+  border: 50px rgb(220, 56, 56) solid;
 }
 @media (max-width: 575px) {
   body {
@@ -9,6 +8,9 @@ body {
   }
 }
 
+header {
+  padding: 20px;
+}
 header div {
   width: 100%;
   height: 200px;
@@ -41,6 +43,9 @@ header div h1 {
   header div h1 {
     font-size: 30px;
   }
+}
+header a {
+  font-size: 50px;
 }
 header nav {
   margin: 10px;
@@ -76,6 +81,9 @@ header nav a:hover {
   }
 }
 
+main {
+  padding: 10px;
+}
 main h2 {
   font-size: 25px;
   font-weight: bolder;
@@ -162,6 +170,50 @@ main ul li div img {
 
 .img-moka2 {
   grid-area: img-moka2;
+}
+
+footer {
+  background-color: rgb(245, 126, 126);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  padding: 0;
+  border-top: dashed black 2px;
+}
+footer p {
+  font-size: 40px;
+  text-shadow: 3px 3px 4px white;
+}
+footer img {
+  height: 150px;
+  width: 150px;
+  align-self: baseline;
+}
+
+#div-americano {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#div-americano h2 {
+  background-color: rgb(144, 75, 75);
+  display: inline-block;
+  height: 300px;
+  width: 250px;
+  border: 3px black solid;
+  position: absolute;
+}
+#div-americano h2:hover {
+  transform: translate(250px);
+  transition: all 2s;
+}
+#div-americano img {
+  height: 300px;
+  width: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */

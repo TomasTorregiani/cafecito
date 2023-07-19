@@ -1,0 +1,26 @@
+#div-americano{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    h2{
+        background-color: rgb(144, 75, 75);
+        display: inline-block;
+        height: 300px;
+        width: 250px;
+        border: 3px black solid;
+        
+        position: absolute;         
+        &:hover{
+            transform: translate(250px);
+            transition: all (2s);
+        }   
+    }
+    img{
+        height: 300px;
+        width: 250px;
+    }
+
+}
