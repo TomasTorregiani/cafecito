@@ -1,12 +1,14 @@
-#main-expreso{
-    div{
+#div-principal{
         position: relative;
         overflow: hidden;
-        img{
+        .img-principal{
             width: 100%;
             height: 600px;
             opacity: 0.6;
             border-radius: 5px;
+            @media (max-width: 575px){
+                height: 300px;
+            }
         }    
         h2{
             position: absolute;
@@ -15,6 +17,17 @@
             font-size: 40px;
             color: white;
             text-shadow: 2px 2px 1px black;
+            @media (max-width: 575px){
+                top: 18%;
+                right: 4%;
+                font-size: 20px;
+            }
+        p{
+            font-size: 30px;
+            @media (max-width: 575px){
+                font-size: 15px;
+            }
+        }    
         }
     }
     section{
@@ -22,48 +35,107 @@
         justify-content: space-between;
         gap: 3px;
         margin: 20px;
-    div{
-        width: 30%;
-        h3{
-            font-size: 30px;
+        @media (max-width: 575px){
+            flex-direction: column;
         }
-        p{
-            font-size: 20px ;
-        }
-        img{
-            width: 200px;
-            height: 200px;
-        }
-    }
-    }
-    #section2{
-        margin: 20px;
-        div{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 25% auto;
-            grid-template-areas: 
-            "titulo titulo"
-            "contenido img";
+        .div-exp{
+            width: 30%;
+            @media (max-width: 575px){
             width: 100%;
-         
+            }
+            h3{
+                font-size: 30px;
+                @media (max-width: 575px){
+                    font-size: 20px;
+                }
+            }
+            p{
+                font-size: 20px ;
+                @media (max-width: 575px){
+                    font-size: 15px;
+                }
+            }
+            img{
+                width: 200px;
+                height: 200px;  
+                @media (max-width: 575px){
+                    width: 150px;
+                    height: 100px;
+                } 
+            }        
         }
-        .h3-gr{
-            grid-area: titulo;
-            justify-self: center;
+    }    
+        #section2{  
+            #div-gr{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 25% auto;
+                grid-template-areas: 
+                "titulo titulo"
+                "contenido img";
+                width: 100%;
+            }
+            .h3-gr{
+                grid-area: titulo;
+                justify-self: center;
+                font-size: 30px;
+            }
+            .p-gr{
+                grid-area: contenido;
+                font-size: 20px;
+            }
+            .img-gr{
+                grid-area: img;
+                width: 350px;
+                height: 250px;
+                opacity: 1;
+                justify-self: center;
+                align-self: center;
+                box-shadow: 3px 3px 5px brown;  
+            }
         }
-        .p-gr{
-            grid-area: contenido;
+        #section3{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            h3{
+                font-size: 30px;
+            }
+            .div3{
+            display: flex;
+            justify-content: space-around;
+            width: 100%; 
+                ol{
+                    li{
+                        h4{
+                            font-size: 27px;
+                            text-decoration: underline;
+                        }
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .div4{
+                flex-direction: column;       
+                img{ 
+                    opacity: 1;
+                    border-radius: 50px;
+                    width: 200px;
+                    height: 250px;
+                }
+            }
+                .div5{
+                flex-direction: column;
+                align-items: flex-end;  
+                   img{
+                    opacity: 1;    
+                    border-radius: 50px;
+                    width: 200px;
+                    height: 250px;
+                   }
+                }
+            }
         }
-        .img-gr{
-            grid-area: img;
-            width: 350px;
-            height: 250px;
-            opacity: 1;
-            justify-self: center;
-            align-self: center;
-            box-shadow: 3px 3px 5px brown;
-        }
-    }
-}
 
