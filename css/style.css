@@ -272,4 +272,68 @@ footer img {
   color: rgb(91, 0, 0);
 }
 
+#main-expreso div {
+  position: relative;
+  overflow: hidden;
+}
+#main-expreso div img {
+  width: 100%;
+  height: 600px;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+#main-expreso div h2 {
+  position: absolute;
+  top: 40%;
+  right: 35%;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+}
+#main-expreso section {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+  margin: 20px;
+}
+#main-expreso section div {
+  width: 30%;
+}
+#main-expreso section div h3 {
+  font-size: 30px;
+}
+#main-expreso section div p {
+  font-size: 20px;
+}
+#main-expreso section div img {
+  width: 200px;
+  height: 200px;
+}
+#main-expreso #section2 {
+  margin: 20px;
+}
+#main-expreso #section2 div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% auto;
+  grid-template-areas: "titulo titulo" "contenido img";
+  width: 100%;
+}
+#main-expreso #section2 .h3-gr {
+  grid-area: titulo;
+  justify-self: center;
+}
+#main-expreso #section2 .p-gr {
+  grid-area: contenido;
+}
+#main-expreso #section2 .img-gr {
+  grid-area: img;
+  width: 350px;
+  height: 250px;
+  opacity: 1;
+  justify-self: center;
+  align-self: center;
+  box-shadow: 3px 3px 5px brown;
+}
+
 /*# sourceMappingURL=style.css.map */
