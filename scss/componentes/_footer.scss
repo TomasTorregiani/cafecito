@@ -7,8 +7,9 @@ footer{
     padding: 0; 
     border-top: dashed black 2px;
     p{
+        
         font-size: 40px;
-        text-shadow: 3px 3px 4px white;
+        text-shadow: 3px 3px 4px rgb(255, 255, 255);
         @media (max-width: 575px){
             display: none;
         }
