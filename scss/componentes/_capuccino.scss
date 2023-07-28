@@ -1,0 +1,41 @@
+
+/*FONTS
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Nanum Myeongjo', serif;*/
+#divcapu{
+    display: flex;
+    justify-content: center;
+    background: rgb(255,255,255);
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(135,112,49,1) 50%, rgba(249,249,249,1) 100%);
+    position: relative;
+    overflow: hidden;
+    img{
+        border-radius: 5px;
+        
+        opacity: 0.7;
+        width: 35%;
+        height: 450px;
+    }
+    h2{
+        text-shadow: -2px -2px 4px rgb(185, 95, 49);
+        font-size: 50px;
+        font-weight: bolder;
+        font-family: 'Lobster', cursive;
+        position: absolute;
+        top: 32%;
+        left: 10%;
+    }
+    #h2bis{
+        text-shadow: -2px -2px 4px rgb(185, 95, 49);
+        font-size: 50px;
+        font-weight: bolder;
+        font-family: 'Lobster', cursive;
+        position: absolute;
+        top: 32%;
+        left: 80%;
+    }
+}

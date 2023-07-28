@@ -1,3 +1,10 @@
+/*FONTS
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Nanum Myeongjo', serif;*/
+
 #div-flat{
     width: 100%;
     height: 700px;
@@ -9,7 +16,8 @@
         opacity: 0.8;
     }
     h2{
-        font-size: 60px;
+        font-family: 'Lobster', cursive;
+        font-size: 50px;
         position: absolute;
         top: 32%;
         left: 44%;
@@ -29,6 +37,9 @@
     padding: 50px 250px 0px 250px;
     display: flex;
     flex-direction: column;
+    p{
+        font-family: 'Lugrasimo', cursive;
+    }
     img{
         height: 300px;
         width: 450px;
@@ -36,12 +47,22 @@
         box-shadow: 3px 3px 12px red;
         border-radius: 15px;
     }
+    ol{
+        font-family: 'Lugrasimo', cursive;
+        font-size: 20px;
+        font-weight: bolder;
+    }
 }
 
 .div-flat3{
     padding: 0 150px 50px 150px;
     display: flex;
     gap: 20px;
+    p{
+        font-family: 'Lugrasimo', cursive;
+        font-size: 20px;
+        font-weight: bolder;
+    }
     img{
         height: 300px;
         width: 450px;

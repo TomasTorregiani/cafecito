@@ -1,3 +1,9 @@
+/*FONTS
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Nanum Myeongjo', serif;*/
 body {
   margin: 0 0;
   border: 50px rgb(128, 33, 33) solid;
@@ -30,14 +36,15 @@ header div img {
   opacity: 0.8;
 }
 header div h1 {
-  font-size: 50px;
+  font-family: "Great Vibes", cursive;
+  font-size: 80px;
   color: rgb(28, 12, 12);
   text-align: center;
-  text-decoration: underline;
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
   position: absolute;
   top: 20%;
   left: 48%;
+  margin: 0;
 }
 @media (max-width: 575px) {
   header div h1 {
@@ -50,7 +57,6 @@ header a {
 header nav {
   margin: 10px;
   border-bottom: 1px grey dashed;
-  font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -62,7 +68,8 @@ header nav {
   }
 }
 header nav a {
-  font-size: 25px;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 30px;
   color: rgb(133, 69, 69);
   font-weight: bold;
   margin: 10px;
@@ -81,13 +88,19 @@ header nav a:hover {
   }
 }
 
+/*FONTS
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Nanum Myeongjo', serif;*/
 main {
-  padding: 10px;
+  padding: 15px;
 }
 main h2 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bolder;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lobster", cursive;
   text-align: center;
 }
 @media (max-width: 575px) {
@@ -96,7 +109,9 @@ main h2 {
   }
 }
 main p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lugrasimo", cursive;
+  font-weight: bolder;
+  font-size: 20px;
 }
 @media (max-width: 575px) {
   main p {
@@ -112,6 +127,7 @@ main ul {
   }
 }
 main ul li {
+  font-family: "Lugrasimo", cursive;
   margin: 50px 0;
   font-size: 40px;
   color: red;
@@ -154,6 +170,7 @@ main ul li div ul {
   list-style-type: decimal;
 }
 main ul li div ul li {
+  font-family: "Lugrasimo", cursive;
   font-size: 20px;
   margin: 5px;
   color: black;
@@ -227,6 +244,12 @@ footer img {
   }
 }
 
+/*FONTS
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Nanum Myeongjo', serif;*/
 #div-americano {
   position: relative;
   overflow: hidden;
@@ -238,8 +261,8 @@ footer img {
 #div-americano h2 {
   background-color: rgb(144, 75, 75);
   display: inline-block;
-  height: 300px;
-  width: 250px;
+  height: 350px;
+  width: 300px;
   border: 3px black solid;
   position: absolute;
 }
@@ -248,11 +271,12 @@ footer img {
   transition: all 2s;
 }
 #div-americano img {
-  height: 300px;
-  width: 250px;
+  height: 350px;
+  width: 300px;
 }
 
 .p1-americano {
+  font-family: "Lugrasimo", cursive;
   padding: 20px 100px;
 }
 
@@ -263,6 +287,10 @@ footer img {
 }
 .cont-flex p {
   width: 600px;
+}
+
+.align {
+  align-self: center;
 }
 
 .box-model {
@@ -282,6 +310,12 @@ footer img {
   color: rgb(91, 0, 0);
 }
 
+/*FONTS
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Nanum Myeongjo', serif;*/
 #div-principal {
   position: relative;
   overflow: hidden;
@@ -313,6 +347,7 @@ footer img {
   }
 }
 #div-principal h2 p {
+  font-family: "Lugrasimo", cursive;
   font-size: 30px;
 }
 @media (max-width: 575px) {
@@ -349,6 +384,7 @@ section .div-exp h3 {
   }
 }
 section .div-exp p {
+  font-family: "Lugrasimo", cursive;
   font-size: 20px;
 }
 @media (max-width: 575px) {
@@ -357,7 +393,7 @@ section .div-exp p {
   }
 }
 section .div-exp img {
-  width: 200px;
+  width: 250px;
   height: 200px;
 }
 @media (max-width: 575px) {
@@ -380,6 +416,7 @@ section .div-exp img {
   font-size: 30px;
 }
 #section2 .p-gr {
+  font-family: "Lugrasimo", cursive;
   grid-area: contenido;
   font-size: 20px;
 }
@@ -412,6 +449,7 @@ section .div-exp img {
   text-decoration: underline;
 }
 #section3 .div3 ol li p {
+  font-family: "Lugrasimo", cursive;
   font-size: 20px;
 }
 #section3 .div3 .div4 {
@@ -420,7 +458,7 @@ section .div-exp img {
 #section3 .div3 .div4 img {
   opacity: 1;
   border-radius: 50px;
-  width: 200px;
+  width: 260px;
   height: 250px;
 }
 #section3 .div3 .div5 {
@@ -430,10 +468,20 @@ section .div-exp img {
 #section3 .div3 .div5 img {
   opacity: 1;
   border-radius: 50px;
-  width: 200px;
+  width: 260px;
   height: 250px;
 }
 
+h3 {
+  font-family: "Lobster", cursive;
+}
+
+/*FONTS
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Nanum Myeongjo', serif;*/
 #div-flat {
   width: 100%;
   height: 700px;
@@ -446,7 +494,8 @@ section .div-exp img {
   opacity: 0.8;
 }
 #div-flat h2 {
-  font-size: 60px;
+  font-family: "Lobster", cursive;
+  font-size: 50px;
   position: absolute;
   top: 32%;
   left: 44%;
@@ -467,6 +516,9 @@ section .div-exp img {
   display: flex;
   flex-direction: column;
 }
+.div-flat2 p {
+  font-family: "Lugrasimo", cursive;
+}
 .div-flat2 img {
   height: 300px;
   width: 450px;
@@ -474,11 +526,21 @@ section .div-exp img {
   box-shadow: 3px 3px 12px red;
   border-radius: 15px;
 }
+.div-flat2 ol {
+  font-family: "Lugrasimo", cursive;
+  font-size: 20px;
+  font-weight: bolder;
+}
 
 .div-flat3 {
   padding: 0 150px 50px 150px;
   display: flex;
   gap: 20px;
+}
+.div-flat3 p {
+  font-family: "Lugrasimo", cursive;
+  font-size: 20px;
+  font-weight: bolder;
 }
 .div-flat3 img {
   height: 300px;
@@ -486,6 +548,46 @@ section .div-exp img {
   align-self: center;
   box-shadow: 3px 3px 12px rgb(0, 0, 0);
   border-radius: 15px;
+}
+
+/*FONTS
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Nanum Myeongjo', serif;*/
+#divcapu {
+  display: flex;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(135, 112, 49) 50%, rgb(249, 249, 249) 100%);
+  position: relative;
+  overflow: hidden;
+}
+#divcapu img {
+  border-radius: 5px;
+  opacity: 0.7;
+  width: 35%;
+  height: 450px;
+}
+#divcapu h2 {
+  text-shadow: -2px -2px 4px rgb(185, 95, 49);
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: "Lobster", cursive;
+  position: absolute;
+  top: 32%;
+  left: 10%;
+}
+#divcapu #h2bis {
+  text-shadow: -2px -2px 4px rgb(185, 95, 49);
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: "Lobster", cursive;
+  position: absolute;
+  top: 32%;
+  left: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */

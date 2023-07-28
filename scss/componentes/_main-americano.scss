@@ -1,3 +1,9 @@
+/*FONTS
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Nanum Myeongjo', serif;*/
 #div-americano{
     position: relative;
     overflow: hidden;
@@ -8,8 +14,8 @@
     h2{
         background-color: rgb(144, 75, 75);
         display: inline-block;
-        height: 300px;
-        width: 250px;
+        height: 350px;
+        width: 300px;
         border: 3px black solid;
         
         position: absolute;         
@@ -19,11 +25,12 @@
         }   
     }
     img{
-        height: 300px;
-        width: 250px;
+        height: 350px;
+        width: 300px;
     }
 }
 .p1-americano{
+    font-family: 'Lugrasimo', cursive;
     padding: 20px 100px ;
 }
 .cont-flex{
@@ -34,7 +41,9 @@
         width: 600px;
     }
 }
-
+.align{
+    align-self: center;
+}
 .box-model{
     border-radius: 30px;                 
     box-shadow: 5px 5px 10px black;
