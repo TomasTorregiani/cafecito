@@ -23,6 +23,21 @@ main{
             font-size: 15px;
         }
    }
+   #divguia{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        
+        img{
+            align-self: center;
+            border-radius: 10px;
+            box-shadow: 4px 4px 2px brown;
+            @media (max-width:575px){
+                width: 250px;
+                height: 330px;
+            }
+        }
+   }
    ul{
     list-style-type: circle;
     @media (max-width:575px){
@@ -35,36 +50,14 @@ main{
         color: red;
         @media (max-width:575px){
             font-size: 20px;
+            margin: 10px 0;
         }
         div{ 
             display: flex;
             justify-content: space-between;
             gap: 30px;
             @media (max-width:575px){
-                display: grid;
-                grid-template-columns: 35% auto;
-                grid-template-rows: 35% 35% 15% 15%;
-                grid-template-areas: 
-                "img-gr gr1"
-                "gr2 gr2"
-                "gr3 gr3"
-                "gr4 gr4";
-                gap: 0;
-                .gr1{
-                    grid-area: gr1;
-                }
-                .gr2{
-                    grid-area: gr2;
-                }
-                .gr3{
-                    grid-area: gr3;
-                }
-                .gr4{
-                    grid-area: gr4;
-                }
-                .img-gr{
-                    grid-area: img-gr;
-                }
+               display: inline-block;
             }
             ul{
                 list-style-type: decimal;
@@ -85,6 +78,7 @@ main{
                 @media (max-width:575px){
                     height: 200px;
                     width: 150px;
+                    display: none;
                 }
             }
         }

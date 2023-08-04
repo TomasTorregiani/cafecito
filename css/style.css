@@ -5,6 +5,7 @@ font-family: 'Lobster', cursive;
 font-family: 'Lugrasimo', cursive;
 font-family: 'Nanum Myeongjo', serif;*/
 body {
+  border-radius: 25px;
   margin: 0 0;
   border: 50px rgb(128, 33, 33) solid;
 }
@@ -43,7 +44,7 @@ header div h1 {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
   position: absolute;
   top: 20%;
-  left: 48%;
+  left: 45%;
   margin: 0;
 }
 @media (max-width: 575px) {
@@ -118,6 +119,22 @@ main p {
     font-size: 15px;
   }
 }
+main #divguia {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+main #divguia img {
+  align-self: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px brown;
+}
+@media (max-width: 575px) {
+  main #divguia img {
+    width: 250px;
+    height: 330px;
+  }
+}
 main ul {
   list-style-type: circle;
 }
@@ -135,6 +152,7 @@ main ul li {
 @media (max-width: 575px) {
   main ul li {
     font-size: 20px;
+    margin: 10px 0;
   }
 }
 main ul li div {
@@ -144,26 +162,7 @@ main ul li div {
 }
 @media (max-width: 575px) {
   main ul li div {
-    display: grid;
-    grid-template-columns: 35% auto;
-    grid-template-rows: 35% 35% 15% 15%;
-    grid-template-areas: "img-gr gr1" "gr2 gr2" "gr3 gr3" "gr4 gr4";
-    gap: 0;
-  }
-  main ul li div .gr1 {
-    grid-area: gr1;
-  }
-  main ul li div .gr2 {
-    grid-area: gr2;
-  }
-  main ul li div .gr3 {
-    grid-area: gr3;
-  }
-  main ul li div .gr4 {
-    grid-area: gr4;
-  }
-  main ul li div .img-gr {
-    grid-area: img-gr;
+    display: inline-block;
   }
 }
 main ul li div ul {
@@ -189,6 +188,7 @@ main ul li div img {
   main ul li div img {
     height: 200px;
     width: 150px;
+    display: none;
   }
 }
 
@@ -222,9 +222,14 @@ footer {
   align-items: center;
   height: 300px;
   padding: 0;
-  border-top: dashed black 2px;
+}
+@media (max-width: 575px) {
+  footer {
+    height: 200px;
+  }
 }
 footer p {
+  width: 25%;
   font-size: 40px;
   text-shadow: 3px 3px 4px rgb(255, 255, 255);
 }
@@ -234,8 +239,9 @@ footer p {
   }
 }
 footer img {
-  height: 150px;
-  width: 150px;
+  padding-top: 1px;
+  height: 120px;
+  width: 120px;
   align-self: baseline;
 }
 @media (max-width: 575px) {
@@ -486,9 +492,9 @@ font-family: 'Nanum Myeongjo', serif;*/
   width: 100%;
   height: 700px;
   position: relative;
-  overflow: hidden;
 }
 #div-flat img {
+  border-radius: 5px;
   width: 100%;
   height: 100%;
   opacity: 0.8;
@@ -497,18 +503,19 @@ font-family: 'Nanum Myeongjo', serif;*/
   font-family: "Lobster", cursive;
   font-size: 50px;
   position: absolute;
-  top: 32%;
+  top: 35%;
   left: 44%;
   color: rgb(225, 56, 56);
   text-shadow: 2px 2px 2px white;
 }
 #div-flat #h2bis {
-  font-size: 60px;
+  font-family: "Lobster", cursive;
+  font-size: 50px;
   position: absolute;
-  top: 42%;
-  left: 43%;
+  top: 45%;
+  left: 44%;
   color: white;
-  text-shadow: 2px 2px 2px brown;
+  text-shadow: 2px 2px 2px rgb(225, 56, 56);
 }
 
 .div-flat2 {
@@ -563,7 +570,6 @@ font-family: 'Nanum Myeongjo', serif;*/
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(135, 112, 49) 50%, rgb(249, 249, 249) 100%);
   position: relative;
-  overflow: hidden;
 }
 #divcapu img {
   border-radius: 5px;
@@ -588,6 +594,23 @@ font-family: 'Nanum Myeongjo', serif;*/
   position: absolute;
   top: 32%;
   left: 80%;
+}
+
+#sectioncapuccino {
+  display: flex;
+  border-top: 1px black dotted;
+  gap: 50px;
+  margin: 30px;
+}
+#sectioncapuccino #div2 img {
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(115, 57, 2);
+}
+
+#divcapu-final {
+  margin: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

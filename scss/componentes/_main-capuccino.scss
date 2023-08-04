@@ -10,9 +10,9 @@ font-family: 'Nanum Myeongjo', serif;*/
     justify-content: center;
     background: rgb(255,255,255);
     background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(135,112,49,1) 50%, rgba(249,249,249,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(135,112,49,1) 50%, rgba(249,249,249,1) 100%);
     position: relative;
-    overflow: hidden;
+    
     img{
         border-radius: 5px;
         
@@ -38,4 +38,21 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(135,112,49,1) 50%
         top: 32%;
         left: 80%;
     }
+}
+#sectioncapuccino{
+    display: flex;
+    border-top: 1px black dotted;
+    gap: 50px;
+    margin: 30px;
+    #div2{     
+        img{
+            height: 300px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px rgb(115, 57, 2);
+        }
+    }
+}
+#divcapu-final{
+    margin: 100px;
 }
