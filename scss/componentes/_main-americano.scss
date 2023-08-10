@@ -6,23 +6,30 @@ font-family: 'Lugrasimo', cursive;
 font-family: 'Nanum Myeongjo', serif;*/
 #div-americano{
     position: relative;
-    overflow: hidden;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    h2{
+    .divb{
         background-color: rgb(144, 75, 75);
-        display: inline-block;
         height: 350px;
         width: 300px;
         border: 3px black solid;
-        
-        position: absolute;         
+        position: absolute;  
+        display: flex;       
         &:hover{
             transform: translate(250px);
             transition: all (2s);
-        }   
+        }
+        p{
+            justify-self: center;
+            align-self: center;
+            font-family: 'Lobster', cursive;
+            font-size: 45px;
+            padding-left: 10px;
+        }
+    
     }
     img{
         height: 350px;
@@ -30,7 +37,7 @@ font-family: 'Nanum Myeongjo', serif;*/
     }
 }
 .p1-americano{
-    font-family: 'Lugrasimo', cursive;
+    font-family: 'Fira Sans', sans-serif;
     padding: 20px 100px ;
 }
 .cont-flex{

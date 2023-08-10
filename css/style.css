@@ -110,7 +110,7 @@ main h2 {
   }
 }
 main p {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
   font-weight: bolder;
   font-size: 20px;
 }
@@ -144,7 +144,7 @@ main ul {
   }
 }
 main ul li {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
   margin: 50px 0;
   font-size: 40px;
   color: red;
@@ -169,7 +169,7 @@ main ul li div ul {
   list-style-type: decimal;
 }
 main ul li div ul li {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
   margin: 5px;
   color: black;
@@ -190,29 +190,6 @@ main ul li div img {
     width: 150px;
     display: none;
   }
-}
-
-#div-moka {
-  display: grid;
-  grid-template-columns: 20% 10% 10% 10% 10% 10% 20%;
-  grid-template-rows: 50px 50px;
-  grid-template-areas: "img-moka1 h1-moka h1-moka h1-moka h1-moka h1-moka img-moka2" "img-moka1 nav-moka nav-moka nav-moka nav-moka nav-moka img-moka2";
-}
-
-.nav-moka {
-  grid-area: nav-moka;
-}
-
-.h1-moka {
-  grid-area: h1-moka;
-}
-
-.img-moka1 {
-  grid-area: img-moka1;
-}
-
-.img-moka2 {
-  grid-area: img-moka2;
 }
 
 footer {
@@ -258,23 +235,29 @@ font-family: 'Lugrasimo', cursive;
 font-family: 'Nanum Myeongjo', serif;*/
 #div-americano {
   position: relative;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
 }
-#div-americano h2 {
+#div-americano .divb {
   background-color: rgb(144, 75, 75);
-  display: inline-block;
   height: 350px;
   width: 300px;
   border: 3px black solid;
   position: absolute;
+  display: flex;
 }
-#div-americano h2:hover {
+#div-americano .divb:hover {
   transform: translate(250px);
   transition: all 2s;
+}
+#div-americano .divb p {
+  justify-self: center;
+  align-self: center;
+  font-family: "Lobster", cursive;
+  font-size: 45px;
+  padding-left: 10px;
 }
 #div-americano img {
   height: 350px;
@@ -282,7 +265,7 @@ font-family: 'Nanum Myeongjo', serif;*/
 }
 
 .p1-americano {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
   padding: 20px 100px;
 }
 
@@ -353,7 +336,7 @@ font-family: 'Nanum Myeongjo', serif;*/
   }
 }
 #div-principal h2 p {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
   font-size: 30px;
 }
 @media (max-width: 575px) {
@@ -390,7 +373,7 @@ section .div-exp h3 {
   }
 }
 section .div-exp p {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
 }
 @media (max-width: 575px) {
@@ -422,7 +405,7 @@ section .div-exp img {
   font-size: 30px;
 }
 #section2 .p-gr {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
   grid-area: contenido;
   font-size: 20px;
 }
@@ -455,7 +438,7 @@ section .div-exp img {
   text-decoration: underline;
 }
 #section3 .div3 ol li p {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
 }
 #section3 .div3 .div4 {
@@ -524,7 +507,7 @@ font-family: 'Nanum Myeongjo', serif;*/
   flex-direction: column;
 }
 .div-flat2 p {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
 }
 .div-flat2 img {
   height: 300px;
@@ -534,7 +517,7 @@ font-family: 'Nanum Myeongjo', serif;*/
   border-radius: 15px;
 }
 .div-flat2 ol {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
   font-weight: bolder;
 }
@@ -545,7 +528,7 @@ font-family: 'Nanum Myeongjo', serif;*/
   gap: 20px;
 }
 .div-flat3 p {
-  font-family: "Lugrasimo", cursive;
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
   font-weight: bolder;
 }
@@ -611,6 +594,112 @@ font-family: 'Nanum Myeongjo', serif;*/
 
 #divcapu-final {
   margin: 100px;
+}
+
+#mainmoka {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(152, 132, 78) 33%, rgb(87, 74, 36) 66%, rgb(60, 44, 0) 100%);
+}
+#mainmoka div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "img moka" "img ccino";
+  padding-bottom: 20px;
+}
+#mainmoka div img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 1px white;
+  grid-area: img;
+  justify-self: center;
+}
+#mainmoka div .moka {
+  color: white;
+  text-shadow: 2px 2px 6px black;
+  font-size: 80px;
+  grid-area: moka;
+  align-self: flex-end;
+}
+#mainmoka div .ccino {
+  color: white;
+  text-shadow: 2px 2px 6px brown;
+  font-size: 80px;
+  grid-area: ccino;
+}
+#mainmoka #sectionmoka {
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 2px white dashed;
+}
+#mainmoka #sectionmoka h2 {
+  padding: 50px;
+  text-shadow: 2px 2px 5px white;
+}
+#mainmoka #sectionmoka p {
+  font-family: "Fira Sans", sans-serif;
+}
+#mainmoka #sectionmoka #divmokaccino {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 20% auto;
+  grid-template-areas: "tit tit" "img2 text";
+  gap: 30px;
+}
+#mainmoka #sectionmoka #divmokaccino h2 {
+  grid-area: tit;
+  padding: 0;
+  margin: 0;
+}
+#mainmoka #sectionmoka #divmokaccino img {
+  width: 250px;
+  height: 300px;
+  grid-area: img2;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px brown;
+}
+#mainmoka #sectionmoka #divmokaccino ol {
+  grid-area: text;
+}
+#mainmoka #sectionmoka #divmokaccino ol li {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 25px;
+}
+
+#mainlatte div {
+  position: relative;
+  width: 100%;
+  height: 550px;
+}
+#mainlatte #pLatte {
+  font-size: 40px;
+  letter-spacing: 3px;
+  word-spacing: 15px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  text-shadow: 2px 2px 2px brown;
+  font-weight: bolder;
+  font-family: "Lobster", cursive;
+}
+#mainlatte h2 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  word-spacing: 15px;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  text-shadow: 2px 2px 2px brown;
+}
+#mainlatte img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+#mainlatte #sectionlatte {
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

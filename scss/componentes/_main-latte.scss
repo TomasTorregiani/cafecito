@@ -1,0 +1,36 @@
+#mainlatte{
+    div{
+        position: relative;
+        width: 100%;
+        height: 550px;
+        
+    }
+    #pLatte{
+        font-size: 40px;
+        letter-spacing: 3px;
+        word-spacing: 15px;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        text-shadow: 2px 2px 2px brown;
+        font-weight: bolder;
+        font-family: 'Lobster', cursive;
+    }
+    h2{
+        font-size: 40px;
+        letter-spacing: 3px;
+        word-spacing: 15px;
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        text-shadow: 2px 2px 2px brown;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+    #sectionlatte{
+        flex-direction: column;
+    }
+}
