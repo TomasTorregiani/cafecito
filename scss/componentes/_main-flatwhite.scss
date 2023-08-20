@@ -9,6 +9,9 @@ font-family: 'Nanum Myeongjo', serif;*/
     width: 100%;
     height: 700px;
     position: relative;
+    @media (max-width: 575px){
+        height: 300px;
+    }
     img{
         border-radius: 5px;
         width: 100%;
@@ -19,25 +22,34 @@ font-family: 'Nanum Myeongjo', serif;*/
         font-family: 'Lobster', cursive;
         font-size: 50px;
         position: absolute;
-        top: 35%;
+        top: 32%;
         left: 44%;
         color: rgb(225, 56, 56);
         text-shadow: 2px 2px 2px white;
+        @media (max-width: 575px){
+        font-size: 25px;
+        }
     }
     #h2bis{
         font-family: 'Lobster', cursive;
         font-size: 50px;
         position: absolute;
         top: 45%;
-        left: 44%;
+        left: 41%;
         color: white;
         text-shadow: 2px 2px 2px rgb(225, 56, 56);
+        @media (max-width: 575px){
+        font-size: 25px;
+        }
     }
 }
 .div-flat2{
     padding: 50px 250px 0px 250px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 575px){
+     padding: 10px;   
+    }
     p{
         font-family: 'Fira Sans', sans-serif;
     }
@@ -47,11 +59,18 @@ font-family: 'Nanum Myeongjo', serif;*/
         align-self: center;
         box-shadow: 3px 3px 12px red;
         border-radius: 15px;
+        @media (max-width: 575px){
+        height: 180px;
+        width: 300px;
+        }
     }
     ol{
         font-family: 'Fira Sans', sans-serif;
         font-size: 20px;
         font-weight: bolder;
+        @media (max-width: 575px){
+        font-size: 15px ;
+        }
     }
 }
 
@@ -59,10 +78,17 @@ font-family: 'Nanum Myeongjo', serif;*/
     padding: 0 150px 50px 150px;
     display: flex;
     gap: 20px;
+    @media (max-width: 575px){
+     padding: 10px;   
+     flex-direction: column;
+    }
     p{
         font-family: 'Fira Sans', sans-serif;
         font-size: 20px;
         font-weight: bolder;
+        @media (max-width: 575px){
+        font-size: 15px;
+        }
     }
     img{
         height: 300px;
@@ -70,5 +96,9 @@ font-family: 'Nanum Myeongjo', serif;*/
         align-self: center;
         box-shadow: 3px 3px 12px rgb(0, 0, 0);
         border-radius: 15px;
+        @media (max-width: 575px){
+        height: 200px;
+        width: 300px;
+        }
     }
 }

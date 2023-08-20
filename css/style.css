@@ -234,6 +234,16 @@ font-family: 'Great Vibes', cursive;
 font-family: 'Lobster', cursive;
 font-family: 'Lugrasimo', cursive;
 font-family: 'Nanum Myeongjo', serif;*/
+.div-mobile {
+  display: none;
+}
+@media (max-width: 575px) {
+  .div-mobile {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 #div-americano {
   position: relative;
   display: flex;
@@ -251,8 +261,7 @@ font-family: 'Nanum Myeongjo', serif;*/
 }
 @media (max-width: 575px) {
   #div-americano .divb {
-    height: 150px;
-    width: 150px;
+    display: none;
   }
 }
 #div-americano .divb:hover {
@@ -269,6 +278,7 @@ font-family: 'Nanum Myeongjo', serif;*/
 @media (max-width: 575px) {
   #div-americano .divb p {
     font-size: 25px;
+    display: none;
   }
 }
 #div-americano img {
@@ -558,6 +568,11 @@ font-family: 'Nanum Myeongjo', serif;*/
   height: 700px;
   position: relative;
 }
+@media (max-width: 575px) {
+  #div-flat {
+    height: 300px;
+  }
+}
 #div-flat img {
   border-radius: 5px;
   width: 100%;
@@ -568,25 +583,40 @@ font-family: 'Nanum Myeongjo', serif;*/
   font-family: "Lobster", cursive;
   font-size: 50px;
   position: absolute;
-  top: 35%;
+  top: 32%;
   left: 44%;
   color: rgb(225, 56, 56);
   text-shadow: 2px 2px 2px white;
+}
+@media (max-width: 575px) {
+  #div-flat h2 {
+    font-size: 25px;
+  }
 }
 #div-flat #h2bis {
   font-family: "Lobster", cursive;
   font-size: 50px;
   position: absolute;
   top: 45%;
-  left: 44%;
+  left: 41%;
   color: white;
   text-shadow: 2px 2px 2px rgb(225, 56, 56);
+}
+@media (max-width: 575px) {
+  #div-flat #h2bis {
+    font-size: 25px;
+  }
 }
 
 .div-flat2 {
   padding: 50px 250px 0px 250px;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 575px) {
+  .div-flat2 {
+    padding: 10px;
+  }
 }
 .div-flat2 p {
   font-family: "Fira Sans", sans-serif;
@@ -598,10 +628,21 @@ font-family: 'Nanum Myeongjo', serif;*/
   box-shadow: 3px 3px 12px red;
   border-radius: 15px;
 }
+@media (max-width: 575px) {
+  .div-flat2 img {
+    height: 180px;
+    width: 300px;
+  }
+}
 .div-flat2 ol {
   font-family: "Fira Sans", sans-serif;
   font-size: 20px;
   font-weight: bolder;
+}
+@media (max-width: 575px) {
+  .div-flat2 ol {
+    font-size: 15px;
+  }
 }
 
 .div-flat3 {
@@ -609,10 +650,21 @@ font-family: 'Nanum Myeongjo', serif;*/
   display: flex;
   gap: 20px;
 }
+@media (max-width: 575px) {
+  .div-flat3 {
+    padding: 10px;
+    flex-direction: column;
+  }
+}
 .div-flat3 p {
   font-family: "Fira Sans", sans-serif;
   font-size: 20px;
   font-weight: bolder;
+}
+@media (max-width: 575px) {
+  .div-flat3 p {
+    font-size: 15px;
+  }
 }
 .div-flat3 img {
   height: 300px;
@@ -620,6 +672,12 @@ font-family: 'Nanum Myeongjo', serif;*/
   align-self: center;
   box-shadow: 3px 3px 12px rgb(0, 0, 0);
   border-radius: 15px;
+}
+@media (max-width: 575px) {
+  .div-flat3 img {
+    height: 200px;
+    width: 300px;
+  }
 }
 
 /*FONTS
@@ -722,11 +780,23 @@ font-family: 'Nanum Myeongjo', serif;*/
   grid-template-areas: "img moka" "img ccino";
   padding-bottom: 20px;
 }
+@media (max-width: 575px) {
+  #mainmoka div {
+    height: 300px;
+    padding-bottom: 0;
+  }
+}
 #mainmoka div img {
   border-radius: 50%;
   box-shadow: 2px 2px 1px white;
   grid-area: img;
   justify-self: center;
+}
+@media (max-width: 575px) {
+  #mainmoka div img {
+    height: 250px;
+    align-self: center;
+  }
 }
 #mainmoka div .moka {
   color: white;
@@ -735,11 +805,21 @@ font-family: 'Nanum Myeongjo', serif;*/
   grid-area: moka;
   align-self: flex-end;
 }
+@media (max-width: 575px) {
+  #mainmoka div .moka {
+    font-size: 40px;
+  }
+}
 #mainmoka div .ccino {
   color: white;
   text-shadow: 2px 2px 6px brown;
   font-size: 80px;
   grid-area: ccino;
+}
+@media (max-width: 575px) {
+  #mainmoka div .ccino {
+    font-size: 40px;
+  }
 }
 #mainmoka #sectionmoka {
   padding: 100px 150px;
@@ -748,6 +828,11 @@ font-family: 'Nanum Myeongjo', serif;*/
   margin-top: 0;
   padding-top: 0;
   border-top: 2px white dashed;
+}
+@media (max-width: 575px) {
+  #mainmoka #sectionmoka {
+    padding: 10px;
+  }
 }
 #mainmoka #sectionmoka h2 {
   padding: 50px;
@@ -763,6 +848,12 @@ font-family: 'Nanum Myeongjo', serif;*/
   grid-template-areas: "tit tit" "img2 text";
   gap: 30px;
 }
+@media (max-width: 575px) {
+  #mainmoka #sectionmoka #divmokaccino {
+    gap: 0;
+    grid-template-rows: 20px 300px;
+  }
+}
 #mainmoka #sectionmoka #divmokaccino h2 {
   grid-area: tit;
   padding: 0;
@@ -775,6 +866,13 @@ font-family: 'Nanum Myeongjo', serif;*/
   border-radius: 10px;
   box-shadow: 2px 2px 4px brown;
 }
+@media (max-width: 575px) {
+  #mainmoka #sectionmoka #divmokaccino img {
+    width: 150px;
+    height: 200px;
+    align-self: center;
+  }
+}
 #mainmoka #sectionmoka #divmokaccino ol {
   grid-area: text;
 }
@@ -782,11 +880,21 @@ font-family: 'Nanum Myeongjo', serif;*/
   font-family: "Fira Sans", sans-serif;
   font-size: 25px;
 }
+@media (max-width: 575px) {
+  #mainmoka #sectionmoka #divmokaccino ol li {
+    font-size: 15px;
+  }
+}
 
 #mainlatte div {
   position: relative;
   width: 100%;
   height: 550px;
+}
+@media (max-width: 575px) {
+  #mainlatte div {
+    height: 300px;
+  }
 }
 #mainlatte #pLatte {
   font-size: 40px;
@@ -812,6 +920,11 @@ font-family: 'Nanum Myeongjo', serif;*/
   width: 100%;
   height: 100%;
   opacity: 0.8;
+}
+@media (max-width: 575px) {
+  #mainlatte img {
+    border-radius: 100px;
+  }
 }
 #mainlatte #sectionlatte {
   flex-direction: column;

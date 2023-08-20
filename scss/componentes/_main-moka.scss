@@ -8,13 +8,20 @@
         grid-template-areas: 
         "img moka"
         "img ccino";
-        
         padding-bottom: 20px;
+        @media (max-width: 575px){
+        height: 300px;
+        padding-bottom: 0;
+        }
         img{
             border-radius: 50%;
             box-shadow: 2px 2px 1px white;
             grid-area: img;
             justify-self: center;
+            @media (max-width: 575px){
+                height: 250px;
+                align-self: center;
+            }
       }
         .moka{
             color: white;
@@ -22,6 +29,9 @@
             font-size: 80px;
             grid-area: moka;
             align-self: flex-end;
+            @media (max-width: 575px){
+                font-size: 40px;
+            }
 
       }
         .ccino{
@@ -29,6 +39,9 @@
             text-shadow: 2px 2px 6px brown;
             font-size: 80px;
             grid-area: ccino;
+            @media (max-width: 575px){
+                font-size: 40px;
+            }
         }
     }
     #sectionmoka{
@@ -38,6 +51,9 @@
         margin-top: 0;
         padding-top: 0;
         border-top: 2px white dashed;
+        @media (max-width: 575px){
+        padding: 10px;
+        }
         h2{
             padding: 50px;
             text-shadow: 2px 2px 5px white;
@@ -53,6 +69,10 @@
             "tit tit"
             "img2 text";
             gap: 30px;
+            @media (max-width: 575px){
+                gap: 0;
+                grid-template-rows: 20px 300px;
+            }
             h2{
                 grid-area: tit;
                 padding: 0;
@@ -64,12 +84,20 @@
                 grid-area: img2;
                 border-radius: 10px;
                 box-shadow: 2px 2px 4px brown;
+                @media (max-width: 575px){
+                    width: 150px;
+                    height: 200px;
+                    align-self: center;
+                }
             }
             ol{
                 grid-area: text;
                 li{
                     font-family: 'Fira Sans', sans-serif;
                     font-size: 25px;
+                    @media (max-width: 575px){
+                        font-size: 15px;
+                    }
                 }
             }
         }
