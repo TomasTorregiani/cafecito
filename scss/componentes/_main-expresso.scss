@@ -24,9 +24,9 @@ font-family: 'Nanum Myeongjo', serif;*/
             color: white;
             text-shadow: 2px 2px 1px black;
             @media (max-width: 575px){
-                top: 18%;
-                right: 4%;
-                font-size: 20px;
+                top: 5%;
+                right: 25%;
+                font-size: 25px;
             }
         p{
             font-family: 'Fira Sans', sans-serif;
@@ -82,11 +82,18 @@ font-family: 'Nanum Myeongjo', serif;*/
                 "titulo titulo"
                 "contenido img";
                 width: 100%;
+                @media (max-width: 575px){
+                    display: flex;
+                    flex-direction: column;
+                }
             }
             .h3-gr{
                 grid-area: titulo;
                 justify-self: center;
                 font-size: 30px;
+                @media (max-width: 575px){
+                    font-size: 20px;
+                }
             }
             .p-gr{
                 font-family: 'Fira Sans', sans-serif;
@@ -101,6 +108,10 @@ font-family: 'Nanum Myeongjo', serif;*/
                 justify-self: center;
                 align-self: center;
                 box-shadow: 3px 3px 5px brown;  
+                @media (max-width: 575px){
+                    width: 250px;
+                    height: 150px;
+                }
             }
         }
         #section3{
@@ -120,10 +131,16 @@ font-family: 'Nanum Myeongjo', serif;*/
                         h4{
                             font-size: 27px;
                             text-decoration: underline;
+                            @media (max-width: 575px){
+                                font-size: 20px;
+                            }
                         }
                         p{
                             font-family: 'Fira Sans', sans-serif;
                             font-size: 20px;
+                            @media (max-width: 575px){
+                                font-size: 15px;
+                            }
                         }
                     }
                 }
@@ -134,16 +151,33 @@ font-family: 'Nanum Myeongjo', serif;*/
                     border-radius: 50px;
                     width: 260px;
                     height: 250px;
+                    @media (max-width: 575px){
+                        display: none;
+                    }
                 }
+                p{
+                    @media (max-width: 575px){
+                    display: none;
+                }
+            }
             }
                 .div5{
                 flex-direction: column;
                 align-items: flex-end;  
+                p{
+                    @media (max-width: 575px){
+                        display: none;
+                    }
+                }
                    img{
                     opacity: 1;    
                     border-radius: 50px;
                     width: 260px;
                     height: 250px;
+                    @media (max-width: 575px){
+                        width: 160px ;
+                        height: 150px;
+                    }
                    }
                 }
             }

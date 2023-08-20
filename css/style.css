@@ -49,7 +49,8 @@ header div h1 {
 }
 @media (max-width: 575px) {
   header div h1 {
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: bolder;
   }
 }
 header a {
@@ -248,6 +249,12 @@ font-family: 'Nanum Myeongjo', serif;*/
   position: absolute;
   display: flex;
 }
+@media (max-width: 575px) {
+  #div-americano .divb {
+    height: 150px;
+    width: 150px;
+  }
+}
 #div-americano .divb:hover {
   transform: translate(250px);
   transition: all 2s;
@@ -259,23 +266,50 @@ font-family: 'Nanum Myeongjo', serif;*/
   font-size: 45px;
   padding-left: 10px;
 }
+@media (max-width: 575px) {
+  #div-americano .divb p {
+    font-size: 25px;
+  }
+}
 #div-americano img {
   height: 350px;
   width: 300px;
+}
+@media (max-width: 575px) {
+  #div-americano img {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 .p1-americano {
   font-family: "Fira Sans", sans-serif;
   padding: 20px 100px;
 }
+@media (max-width: 575px) {
+  .p1-americano {
+    padding: 10px;
+  }
+}
 
 .cont-flex {
   display: flex;
   justify-content: space-evenly;
-  gap: 100px;
+  gap: 50px;
+}
+@media (max-width: 575px) {
+  .cont-flex {
+    flex-direction: column;
+  }
 }
 .cont-flex p {
   width: 600px;
+}
+@media (max-width: 575px) {
+  .cont-flex p {
+    width: 100%;
+    gap: 0;
+  }
 }
 
 .align {
@@ -330,9 +364,9 @@ font-family: 'Nanum Myeongjo', serif;*/
 }
 @media (max-width: 575px) {
   #div-principal h2 {
-    top: 18%;
-    right: 4%;
-    font-size: 20px;
+    top: 5%;
+    right: 25%;
+    font-size: 25px;
   }
 }
 #div-principal h2 p {
@@ -399,10 +433,21 @@ section .div-exp img {
   grid-template-areas: "titulo titulo" "contenido img";
   width: 100%;
 }
+@media (max-width: 575px) {
+  #section2 #div-gr {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #section2 .h3-gr {
   grid-area: titulo;
   justify-self: center;
   font-size: 30px;
+}
+@media (max-width: 575px) {
+  #section2 .h3-gr {
+    font-size: 20px;
+  }
 }
 #section2 .p-gr {
   font-family: "Fira Sans", sans-serif;
@@ -417,6 +462,12 @@ section .div-exp img {
   justify-self: center;
   align-self: center;
   box-shadow: 3px 3px 5px brown;
+}
+@media (max-width: 575px) {
+  #section2 .img-gr {
+    width: 250px;
+    height: 150px;
+  }
 }
 
 #section3 {
@@ -437,9 +488,19 @@ section .div-exp img {
   font-size: 27px;
   text-decoration: underline;
 }
+@media (max-width: 575px) {
+  #section3 .div3 ol li h4 {
+    font-size: 20px;
+  }
+}
 #section3 .div3 ol li p {
   font-family: "Fira Sans", sans-serif;
   font-size: 20px;
+}
+@media (max-width: 575px) {
+  #section3 .div3 ol li p {
+    font-size: 15px;
+  }
 }
 #section3 .div3 .div4 {
   flex-direction: column;
@@ -450,15 +511,36 @@ section .div-exp img {
   width: 260px;
   height: 250px;
 }
+@media (max-width: 575px) {
+  #section3 .div3 .div4 img {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  #section3 .div3 .div4 p {
+    display: none;
+  }
+}
 #section3 .div3 .div5 {
   flex-direction: column;
   align-items: flex-end;
+}
+@media (max-width: 575px) {
+  #section3 .div3 .div5 p {
+    display: none;
+  }
 }
 #section3 .div3 .div5 img {
   opacity: 1;
   border-radius: 50px;
   width: 260px;
   height: 250px;
+}
+@media (max-width: 575px) {
+  #section3 .div3 .div5 img {
+    width: 160px;
+    height: 150px;
+  }
 }
 
 h3 {
@@ -560,6 +642,11 @@ font-family: 'Nanum Myeongjo', serif;*/
   width: 35%;
   height: 450px;
 }
+@media (max-width: 575px) {
+  #divcapu img {
+    height: 200px;
+  }
+}
 #divcapu h2 {
   text-shadow: -2px -2px 4px rgb(185, 95, 49);
   font-size: 50px;
@@ -568,6 +655,12 @@ font-family: 'Nanum Myeongjo', serif;*/
   position: absolute;
   top: 32%;
   left: 10%;
+}
+@media (max-width: 575px) {
+  #divcapu h2 {
+    font-size: 25px;
+    left: 5%;
+  }
 }
 #divcapu #h2bis {
   text-shadow: -2px -2px 4px rgb(185, 95, 49);
@@ -578,6 +671,12 @@ font-family: 'Nanum Myeongjo', serif;*/
   top: 32%;
   left: 80%;
 }
+@media (max-width: 575px) {
+  #divcapu #h2bis {
+    font-size: 25px;
+    left: 75%;
+  }
+}
 
 #sectioncapuccino {
   display: flex;
@@ -585,15 +684,31 @@ font-family: 'Nanum Myeongjo', serif;*/
   gap: 50px;
   margin: 30px;
 }
+@media (max-width: 575px) {
+  #sectioncapuccino {
+    gap: 25px;
+  }
+}
 #sectioncapuccino #div2 img {
   height: 300px;
   width: 250px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgb(115, 57, 2);
 }
+@media (max-width: 575px) {
+  #sectioncapuccino #div2 img {
+    height: 200px;
+    width: 150px;
+  }
+}
 
 #divcapu-final {
   margin: 100px;
+}
+@media (max-width: 575px) {
+  #divcapu-final {
+    margin: 10px;
+  }
 }
 
 #mainmoka {
