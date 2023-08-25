@@ -74,7 +74,21 @@ font-family: 'Nanum Myeongjo', serif;*/
             width: 100%;
             gap: 0;
     }
-}
+    }
+    img{
+        @media (max-width:575px){
+            width: 200px;
+            height: 250px;
+        }
+        @media (max-width:500px){
+            width: 180px;
+            height: 230px;
+        }
+        @media (max-width:400px){
+            width: 160px;
+            height: 210px;
+        }
+    }
 }
 .align{
     align-self: center;
@@ -88,9 +102,15 @@ font-family: 'Nanum Myeongjo', serif;*/
     p{
         font-size: 25px;
         text-align: center;
+        @media (max-width:575px){
+            font-size: 20px;
+        }
     }
     li{
         font-size: 30px;
         color:rgb(91, 0, 0);
+        @media (max-width:575px){
+            font-size: 20px;
+        }
     }
 }

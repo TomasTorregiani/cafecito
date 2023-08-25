@@ -15,6 +15,12 @@ font-family: 'Nanum Myeongjo', serif;*/
             @media (max-width: 575px){
                 height: 300px;
             }
+            @media (max-width: 500px){
+                height: 250px;
+            }
+            @media (max-width: 400px){
+                height: 200px;
+            }
         }    
         h2{
             position: absolute;
@@ -99,6 +105,9 @@ font-family: 'Nanum Myeongjo', serif;*/
                 font-family: 'Fira Sans', sans-serif;
                 grid-area: contenido;
                 font-size: 20px;
+                @media (max-width: 575px){
+                    font-size: 15px;
+                }
             }
             .img-gr{
                 grid-area: img;
@@ -121,7 +130,11 @@ font-family: 'Nanum Myeongjo', serif;*/
             margin: 0;
             h3{
                 font-size: 30px;
+                @media (max-width: 570px){
+                    font-size: 20px;
+                    padding: 15px;
             }
+        }
             .div3{
             display: flex;
             justify-content: space-around;
@@ -163,7 +176,8 @@ font-family: 'Nanum Myeongjo', serif;*/
             }
                 .div5{
                 flex-direction: column;
-                align-items: flex-end;  
+                align-items: flex-end;
+                  
                 p{
                     @media (max-width: 575px){
                         display: none;
@@ -177,6 +191,7 @@ font-family: 'Nanum Myeongjo', serif;*/
                     @media (max-width: 575px){
                         width: 160px ;
                         height: 150px;
+                        
                     }
                    }
                 }

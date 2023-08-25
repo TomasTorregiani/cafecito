@@ -6,6 +6,12 @@
         @media (max-width: 575px){
         height: 300px;
         }
+        @media (max-width: 500px){
+        height: 260px;
+        }
+        @media (max-width: 400px){
+        height: 220px;
+        }
     }
     #pLatte{
         font-size: 40px;
@@ -17,6 +23,21 @@
         text-shadow: 2px 2px 2px brown;
         font-weight: bolder;
         font-family: 'Lobster', cursive;
+        @media (max-width: 575px){
+            font-size: 30px;
+            top: 32%;
+            left: 40%;
+        }
+        @media (max-width: 500px){
+            font-size: 25px;
+            top: 30%;
+            left: 38%;
+        }
+        @media (max-width: 400px){
+            font-size: 20px;
+            top: 28%;
+            left: 36%;
+        }
     }
     h2{
         font-size: 40px;
@@ -26,6 +47,21 @@
         top: 45%;
         left: 40%;
         text-shadow: 2px 2px 2px brown;
+        @media (max-width: 575px){
+            font-size: 30px;
+            top: 45%;
+            left: 40%;
+        }
+        @media (max-width: 500px){
+            font-size: 25px;
+            top: 43%;
+            left: 38%;
+        }
+        @media (max-width: 400px){
+            font-size: 20px;
+            top: 40%;
+            left: 36%;
+        }
     }
     img{
         width: 100%;
@@ -33,9 +69,9 @@
         opacity: 0.8;
         @media (max-width: 575px){
         border-radius: 100px;
-        }
     }
     #sectionlatte{
         flex-direction: column;
+    }
     }
 }
